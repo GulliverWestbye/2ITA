@@ -17,8 +17,16 @@ print(multi)
 
 tall2 = [addisjon, multi]
 
-tall3 = [tall, tall2]
+tall3 = []
+
+for i in tall:
+    tall3.append(i)
+
+for i in tall2:
+    tall3.append(i)
 
 print(tall3)
 
-tall3.pop
+tall3.pop(-1)
+
+print(tall3)
