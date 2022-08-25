@@ -30,3 +30,17 @@ print(tall3)
 tall3.pop(-1)
 
 print(tall3)
+
+
+navnliste = []
+
+for i in range(4):
+    navn = input().capitalize()
+    navnliste.append(navn)
+
+if "Gulliver" in navnliste:
+    print("Du husket meg!")
+
+else:
+    print("Glemte du meg?")
+    
