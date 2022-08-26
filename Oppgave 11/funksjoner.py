@@ -12,9 +12,12 @@ a()
 a()
 
 
-tekst = input("Skriv inn tekst: ")
-bokstav = input("Skriv inn den bokstaven du vil se hvor mange det er av i teksten du skrev: ")
+minTekst = input("Skriv inn tekst: ")
+minBokstav = input("Skriv inn den bokstaven du vil se hvor mange det er av i teksten du skrev: ")
+    
 
-tell = collections.Counter(tekst)
+def tellForekomst (minTekst, minBokstav):
+    tell = collections.Counter(minTekst)
+    return tell[minBokstav]
 
-print(tell[bokstav])
+print(tellForekomst(minTekst, minBokstav))
